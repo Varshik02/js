@@ -38,6 +38,31 @@ const myFunction = function() {
 
 myFunction()
 
-console.log(typeof(outsideTemp));
-console.log(typeof(myFunction));
-console.log(typeof(heros));
+// console.log(typeof(outsideTemp));
+// console.log(typeof(myFunction));
+// console.log(typeof(heros));
+
+// ****************************************
+
+// Stake(primitive)(copy), Heap(Non-primitive)(Refrence) // Memories
+
+let myYoutubename = "prajapativarshik"
+
+let anotherName = myYoutubename
+anotherName = "varshik"
+console.log(myYoutubename);
+console.log(anotherName);
+
+let userOne = {
+    name: "varshik",
+    email: "prajapativarshik@gmail.com",
+    age: 21,
+    State: "surat"
+}
+
+let userTwo = userOne
+
+userTwo.email = "varshikgmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
