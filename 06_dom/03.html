@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webTech</title>
+</head>
+<body style="background-color:#212121"; color: #ffff>
+    
+</body>
+
+<script>
+   const myDiv = document.createElement('div')
+   console.log(myDiv);
+   myDiv.className = "main"
+   myDiv.id = Math.round(Math.random() * 10 + 1)
+   myDiv.setAttribute("title", "webtech")
+   myDiv.style.backgroundColor = "green"
+   myDiv.style.color = "white"
+   myDiv.style.padding = "12px"
+   myDiv.style.borderRadius = "12px"
+//    myDiv.innerText = "web tech"
+   const myText = document.createTextNode("Web Tech")
+   myDiv.appendChild(myText)
+   document.body.appendChild(myDiv)
+   console.log(myText);
+</script>
+</html>
